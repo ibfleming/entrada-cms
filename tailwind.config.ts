@@ -8,9 +8,14 @@ const config: Config = {
 	],
 	theme: {
 		colors: {
-			'entrata-red': '#E31E24',
+			'entrata-green': '#2d7e38',
 			'entrata-bg': '#F5F5F5',
 			'entrata-gray': '#333333',
+		},
+		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
