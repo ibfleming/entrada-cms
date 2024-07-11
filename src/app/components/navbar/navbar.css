@@ -1,0 +1,11 @@
+.nav-item {
+	@apply flex flex-row justify-center items-center align-middle w-fit h-full border-r-[1px] border-entrata-bg px-8;
+}
+
+.nav-item:hover {
+	@apply bg-entrata-bg text-entrata-red transition-colors ease-out duration-200;
+}
+
+.active-item {
+	@apply bg-entrata-bg text-entrata-gray;
+}

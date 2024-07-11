@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: none;
+}
