@@ -62,7 +62,7 @@ export default function Menu() {
 												className='submenu-link'
 												href={item.link}
 											>
-												{item.name}
+												<span>{item.name}</span>
 											</Link>
 										</li>
 									)

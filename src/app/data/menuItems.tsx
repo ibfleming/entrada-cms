@@ -9,15 +9,15 @@ const menuItems = [
 	{
 		name: 'Dashboard',
 		icon: DashboardIcon,
-		link: '/',
+		link: '/dashboard',
 		submenu: [
 			{
 				name: 'My Dashboard',
-				link: '/',
+				link: '/dashboard',
 			},
 			{
 				name: 'Leasing Center',
-				link: '/',
+				link: '/dashboard',
 			},
 		],
 	},

@@ -11,6 +11,10 @@ input:focus {
 
 .search-parent {
 	@apply flex flex-row border-[1px] border-entrata-gray rounded-md p-1 w-[384px] min-w-[128px] max-w-[384px] mr-8;
+
+	@media (max-width: 640px) {
+		width: 256px;
+	}
 }
 
 .search-icon {
