@@ -17,7 +17,7 @@ const menuItems = [
 			},
 			{
 				name: 'Leasing Center',
-				link: '/dashboard',
+				link: '/',
 			},
 		],
 	},

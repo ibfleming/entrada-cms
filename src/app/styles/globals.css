@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-	@apply bg-entrata-bg;
+body {
+	@apply bg-[#ccc];
+}
+
+.module-wrapper {
+	@apply bg-entrata-bg text-entrata-gray text-sm m-3 p-8 overflow-hidden box-border rounded-sm shadow-md;
 }
