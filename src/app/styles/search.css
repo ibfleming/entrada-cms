@@ -17,6 +17,10 @@ input:focus {
 	}
 }
 
+.search-parent:focus-within {
+	@apply outline outline-2 -outline-offset-1 outline-entrata-green border-entrata-green;
+}
+
 .search-icon {
 	@apply text-entrata-gray w-6 h-6 mx-1.5;
 }

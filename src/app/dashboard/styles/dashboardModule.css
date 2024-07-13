@@ -1,0 +1,3 @@
+.dashboard-module {
+	@apply border-[1px] border-dashed border-entrata-gray p-2 rounded-sm shadow-md;
+}

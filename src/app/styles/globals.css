@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-	@apply bg-[#ccc];
+	@apply bg-entrata-light-gray;
 }
 
 .module-wrapper {
-	@apply bg-entrata-bg text-entrata-gray text-sm m-3 p-8 overflow-hidden box-border rounded-sm shadow-md;
+	@apply bg-entrata-bg text-entrata-gray text-sm m-3 p-4 overflow-hidden box-border rounded-sm shadow-md;
 }

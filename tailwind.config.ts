@@ -11,6 +11,7 @@ const config: Config = {
 			'entrata-green': '#2d7e38',
 			'entrata-bg': '#F5F5F5',
 			'entrata-gray': '#333333',
+			'entrata-light-gray': '#cccccc',
 		},
 		extend: {
 			fontFamily: {
