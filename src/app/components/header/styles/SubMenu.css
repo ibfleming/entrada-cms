@@ -1,0 +1,10 @@
+.subitem-nav-bar-parent {
+  @apply bg-background text-secondary block h-[40px] max-h-[40px] min-h-[40px] w-full shadow-sm;
+}
+.subitem-list {
+  @apply ml-8 flex h-full flex-row items-center justify-start space-x-8 align-middle text-xs font-normal;
+}
+
+.subitem-list li:hover {
+  @apply text-[#777];
+}

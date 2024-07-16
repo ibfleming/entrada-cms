@@ -1,0 +1,22 @@
+.dashboard-parent {
+  @apply block h-full w-full;
+}
+
+.dashboard {
+  @apply m-4 grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "left right";
+}
+
+.column {
+  @apply bg-background rounded-sm p-4 shadow-md;
+}
+
+.left {
+  @apply mr-4;
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}

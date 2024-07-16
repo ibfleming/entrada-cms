@@ -1,0 +1,3 @@
+.dashboard-menu {
+  @apply border-secondary border-[1px] border-dashed;
+}

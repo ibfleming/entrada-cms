@@ -72,3 +72,9 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Example {
+    id        Int      @id @default(autoincrement())
+    name      String
+    @@index([name])
+}

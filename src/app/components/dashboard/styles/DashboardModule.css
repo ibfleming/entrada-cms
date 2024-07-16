@@ -1,0 +1,3 @@
+.dashboard-module {
+  @apply border-secondary rounded-sm border-[1px] border-dashed p-4;
+}
