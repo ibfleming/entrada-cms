@@ -3,6 +3,7 @@
 
 generator client {
     provider = "prisma-client-js"
+    previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
@@ -12,6 +13,7 @@ datasource db {
     // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
     // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
     url      = env("DATABASE_URL")
+    extensions = [pgcrypto]
 }
 
 model Post {
@@ -73,8 +75,32 @@ model VerificationToken {
     @@unique([identifier, token])
 }
 
+// Example Test Model
+
 model Example {
     id        Int      @id @default(autoincrement())
     name      String
     @@index([name])
+}
+
+// Entrada Models
+
+enum PhoneType {
+    MOBILE
+    HOME
+    OFFICE
+}
+
+model Lead {
+    id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+    firstName   String
+    middleName  String?
+    lastName    String
+    phone       String
+    phoneType   PhoneType @default(MOBILE)
+    email       String   @unique
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+
+    @@index([email])
 }
