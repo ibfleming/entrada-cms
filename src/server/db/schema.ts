@@ -2,11 +2,13 @@ import { relations, sql } from "drizzle-orm";
 import {
   index,
   integer,
+  pgEnum,
   pgTableCreator,
   primaryKey,
   serial,
   text,
   timestamp,
+  uuid,
   varchar,
 } from "drizzle-orm/pg-core";
 import { type AdapterAccount } from "next-auth/adapters";
@@ -129,6 +131,20 @@ export const verificationTokens = createTable(
   }),
 );
 
+export const phoneTypeEnum = pgEnum("phone_type", ["MOBILE", "PHONE", "HOME"]);
+
 export const profile = createTable("profile", {
-  identifier: varchar("identifier", { length: 255 }).notNull(),
+  identifier: uuid("identifier").defaultRandom().primaryKey(),
+  firstName: varchar("first_name", { length: 255 }).notNull(),
+  middleName: varchar("middle_name", { length: 255 }),
+  lastName: varchar("last_name", { length: 255 }).notNull(),
+  phone: varchar("phone", { length: 255 }).notNull(),
+  phoneType: phoneTypeEnum("phone_type").default("MOBILE").notNull(),
+  email: varchar("email", { length: 255 }).unique().notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .default(sql`CURRENT_TIMESTAMP`)
+    .notNull(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).$onUpdate(
+    () => new Date(),
+  ),
 });
