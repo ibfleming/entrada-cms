@@ -18,7 +18,7 @@ export default function DashboardMenu() {
           ))}
         </ul>
       </nav>
-      <DashboardSubMenu />
+      <DashboardSubMenu dashItem={"Applicants"} />
     </>
   );
 }

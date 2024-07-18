@@ -1,6 +1,7 @@
 const dashboardSubItems = [
   {
-    Approvals: [
+    name: "Approvals",
+    data: [
       { name: "Applications", link: "/dashboard", count: 0 },
       { name: "Screenings", link: "/dashboard", count: 0 },
       { name: "Renewals", link: "/dashboard", count: 0 },
@@ -8,7 +9,8 @@ const dashboardSubItems = [
     ],
   },
   {
-    Leads: [
+    name: "Leads",
+    data: [
       { name: "Assign Agents", link: "/dashboard", count: 0 },
       { name: "Potential Leads", link: "/dashboard", count: 0 },
       { name: "Never Contacted", link: "/dashboard", count: 0 },
@@ -17,7 +19,8 @@ const dashboardSubItems = [
     ],
   },
   {
-    Applicants: [
+    name: "Applicants",
+    data: [
       { name: "Never Contacted", link: "/dashboard", count: 0 },
       { name: "Contact Needed", link: "/dashboard", count: 0 },
       { name: "Not Progressing", link: "/dashboard", count: 0 },
@@ -26,7 +29,8 @@ const dashboardSubItems = [
     ],
   },
   {
-    Residents: [
+    name: "Residents",
+    data: [
       { name: "Contact Needed", link: "/dashboard", count: 0 },
       { name: "Not Progressing", link: "/dashboard", count: 0 },
       { name: "Move-In Reviews", link: "/dashboard", count: 0 },
@@ -39,7 +43,8 @@ const dashboardSubItems = [
     ],
   },
   {
-    Maintenance: [
+    name: "Maintenance",
+    data: [
       { name: "Contact Needed", link: "/dashboard", count: 0 },
       { name: "Work Orders", link: "/dashboard", count: 0 },
       { name: "Inspections", link: "/dashboard", count: 0 },
