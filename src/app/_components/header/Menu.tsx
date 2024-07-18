@@ -47,7 +47,7 @@ export default function Menu() {
   return (
     <>
       <nav className="nav-parent">
-        <ul className="nav-list">
+        <ul className="nav-list font-ibm-plex-sans">
           {menuItems.map((item: MenuItem, index: number) => (
             <li
               className={`menu-item ${isActive(item.link) ? "active" : ""}`}
@@ -65,7 +65,7 @@ export default function Menu() {
               {item.submenu && showDropdown === item.name && (
                 <ul
                   ref={dropdownRef}
-                  className="submenu-container"
+                  className="submenu-container font-inter"
                   onMouseEnter={handleSubmenuMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >

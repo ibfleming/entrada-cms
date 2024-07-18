@@ -12,6 +12,8 @@ export default {
       },
       fontFamily: {
         inter: "var(--font-inter)",
+        poppins: "var(--font-poppins)",
+        "ibm-plex-sans": "var(--font-ibm-plex-sans)",
       },
     },
   },

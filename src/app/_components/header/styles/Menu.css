@@ -1,5 +1,5 @@
 .nav-parent {
-  @apply bg-primary text-background block h-[40px] max-h-[40px] min-h-[40px] w-full;
+  @apply block h-[40px] max-h-[40px] min-h-[40px] w-full bg-primary text-background;
 }
 
 .nav-list {
@@ -7,11 +7,11 @@
 }
 
 .menu-item {
-  @apply border-background h-full w-fit min-w-fit max-w-fit border-r-[1px];
+  @apply h-full w-fit min-w-fit max-w-fit border-r-[1px] border-background;
 }
 
 .menu-item.active {
-  @apply bg-background text-primary;
+  @apply bg-background font-semibold text-primary;
 }
 
 .menu-item:hover {
@@ -27,12 +27,12 @@
 }
 
 .submenu-container {
-  @apply bg-primary text-background relative w-full min-w-full max-w-full rounded-b-md text-xs drop-shadow-lg;
+  @apply relative w-full min-w-full max-w-full rounded-b-md bg-primary text-xs text-background drop-shadow-lg;
   z-index: 1000 !important;
 }
 
 .submenu-item {
-  @apply border-background flex items-center justify-center border-b-[1px];
+  @apply flex items-center justify-center border-b-[1px] border-background;
 }
 
 .submenu-item:hover {

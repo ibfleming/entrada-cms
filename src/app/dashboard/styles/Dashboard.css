@@ -4,7 +4,7 @@
 
 .dashboard {
   @apply grid p-4;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 80% 20%;
   grid-template-areas: "left right";
 }
 

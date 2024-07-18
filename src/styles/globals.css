@@ -5,7 +5,3 @@
 body {
   @apply bg-tertiary;
 }
-
-.module-wrapper {
-  @apply bg-background text-secondary m-3 box-border overflow-hidden rounded-sm p-4 text-sm shadow-md;
-}

@@ -1,18 +1,12 @@
 import Link from "next/link";
 import SearchBar from "./Search";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  weight: "600",
-  subsets: ["latin"],
-});
 
 export default function Banner() {
   return (
-    <header className="bg-background block h-[64px] w-full">
+    <header className="block h-[64px] w-full bg-background">
       <div className="flex h-full w-full flex-row items-center justify-between">
-        <div className="text-primary ml-8 text-xl">
-          <Link href={"/"} className={poppins.className}>
+        <div className="ml-8 text-xl text-primary">
+          <Link href={"/"} className="font-poppins font-bold">
             entrada
           </Link>
         </div>

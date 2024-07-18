@@ -1,11 +1,21 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Poppins, IBM_Plex_Sans } from "next/font/google";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const IBMPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
+});
 
 export const metadata: Metadata = {
   title: "Entrada (dev)",
@@ -18,7 +28,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${poppins.variable} ${IBMPlexSans.variable}`}
+    >
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
