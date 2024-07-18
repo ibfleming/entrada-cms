@@ -11,7 +11,7 @@ export default {
         tertiary: "#cccccc",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: "var(--font-inter)",
       },
     },
   },
