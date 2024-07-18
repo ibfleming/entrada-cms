@@ -131,8 +131,14 @@ export const verificationTokens = createTable(
   }),
 );
 
+/**
+ * Phone type enum used in the profile table.
+ */
 export const phoneTypeEnum = pgEnum("phone_type", ["MOBILE", "PHONE", "HOME"]);
 
+/**
+ * Profile table.
+ */
 export const profile = createTable("profile", {
   identifier: uuid("identifier").defaultRandom().primaryKey(),
   firstName: varchar("first_name", { length: 255 }).notNull(),
