@@ -1,0 +1,56 @@
+.nav-parent {
+  @apply bg-primary text-background block h-[40px] max-h-[40px] min-h-[40px] w-full;
+}
+
+.nav-list {
+  @apply flex h-full flex-row items-center justify-start align-middle text-sm font-normal;
+}
+
+.menu-item {
+  @apply border-background h-full w-fit min-w-fit max-w-fit border-r-[1px];
+}
+
+.menu-item.active {
+  @apply bg-background text-primary;
+}
+
+.menu-item:hover {
+  @apply bg-background text-primary transition-colors duration-200 ease-out;
+}
+
+.menu-link {
+  @apply flex h-full w-full flex-row items-center justify-center px-8 align-middle;
+}
+
+.menu-icon {
+  @apply mr-1.5 h-5 w-5;
+}
+
+.submenu-container {
+  @apply bg-primary text-background relative w-full min-w-full max-w-full rounded-b-md text-xs drop-shadow-lg;
+  z-index: 1000 !important;
+}
+
+.submenu-item {
+  @apply border-background flex items-center justify-center border-b-[1px];
+}
+
+.submenu-item:hover {
+  @apply bg-background text-primary transition-colors duration-200 ease-out;
+}
+
+.submenu-item:last-child {
+  @apply border-b-0;
+}
+
+.submenu-item:last-child:hover {
+  @apply rounded-b-md;
+}
+
+.submenu-link {
+  @apply flex h-full w-full flex-row items-center justify-center py-2 text-center align-middle;
+}
+
+.submenu-link span {
+  @apply w-3/4 whitespace-pre-line;
+}

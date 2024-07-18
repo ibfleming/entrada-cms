@@ -1,0 +1,26 @@
+.dashboard-menu {
+  @apply text-xs text-secondary;
+}
+
+.dashboard-list {
+  @apply flex flex-row gap-2;
+}
+
+.dashboard-item {
+}
+
+.dashboard-link {
+  @apply flex flex-wrap items-center justify-center rounded-t-[4px] border-x-[1px] border-t-[1px] border-[#ccc] bg-[#ebebeb] p-1.5 px-5;
+}
+
+.dashboard-link:hover {
+  @apply bg-[#f5f5f5];
+}
+
+#dash-name {
+  @apply pr-2;
+}
+
+#dash-count {
+  @apply rounded-sm bg-primary px-1.5 py-0.5 text-[10px] text-background;
+}
