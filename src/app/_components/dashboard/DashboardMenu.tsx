@@ -20,7 +20,7 @@ export default function DashboardMenu() {
             >
               <Link
                 className={`dashboard-link ${item.name === activeItem ? "active" : ""}`}
-                href="/dashboard"
+                href="#"
                 onClick={() => setActiveItem(item.name)}
               >
                 <span id="dash-name">{item.name}</span>

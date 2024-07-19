@@ -20,10 +20,7 @@ export default {
         "ibm-plex-sans": "var(--font-ibm-plex-sans)",
       },
       transitionProperty: {
-        "max-height": "max-height",
-      },
-      maxHeight: {
-        screen: "100vh",
+        "max-height": "max-height", // Sub Menu Dropdown Animation
       },
     },
   },

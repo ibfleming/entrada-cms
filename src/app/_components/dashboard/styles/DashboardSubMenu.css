@@ -1,6 +1,19 @@
-.dash-sub-item {
+.dash-sub-menu {
+  @apply flex flex-wrap items-center justify-start gap-1.5 rounded-tr-md border-x-[1px] border-b-[1px] border-t-[1px] border-tertiary px-4 py-2 text-xs text-secondary;
 }
 
 .dash-sub-item:hover {
   @apply text-background-300;
+}
+
+.dash-sub-item {
+  @apply p-1 px-3;
+}
+
+.dash-sub-item.active {
+  @apply rounded-md border-[1px] border-secondary bg-background-200;
+}
+
+.dash-sub-icon {
+  @apply rounded-md border-[1px] border-secondary bg-tertiary px-1.5 py-[2px] text-[10px] text-secondary drop-shadow-sm;
 }

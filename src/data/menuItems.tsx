@@ -9,15 +9,15 @@ const menuItems = [
   {
     name: "Dashboard",
     icon: DashboardIcon,
-    link: "/dashboard",
+    link: "/",
     submenu: [
       {
         name: "My Dashboard",
-        link: "/dashboard",
+        link: "/",
       },
       {
         name: "Leasing Center",
-        link: "/dashboard",
+        link: "/",
       },
     ],
   },
@@ -92,7 +92,7 @@ const menuItems = [
   {
     name: "Data & Reports",
     icon: DataReportsIcon,
-    link: "/datareports",
+    link: "/reports",
     submenu: [
       {
         name: "Reporting",
