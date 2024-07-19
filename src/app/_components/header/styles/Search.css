@@ -10,7 +10,7 @@ input:focus {
 }
 
 .search-parent {
-  @apply border-secondary mr-8 flex w-[384px] min-w-[128px] max-w-[384px] flex-row rounded-md border-[1px] p-1;
+  @apply mr-8 flex w-[384px] min-w-[128px] max-w-[384px] flex-row rounded-md border-[1px] border-secondary p-1;
 
   @media (max-width: 640px) {
     width: 256px;
@@ -18,9 +18,9 @@ input:focus {
 }
 
 .search-parent:focus-within {
-  @apply outline-primary border-primary outline outline-2 -outline-offset-1;
+  @apply border-primary outline outline-2 -outline-offset-1 outline-primary;
 }
 
 .search-icon {
-  @apply text-secondary mx-1.5 h-6 w-6;
+  @apply mx-1.5 h-6 w-6 text-secondary;
 }

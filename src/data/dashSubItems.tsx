@@ -2,10 +2,10 @@ const dashboardSubItems = [
   {
     name: "Approvals",
     data: [
-      { name: "Applications", link: "/dashboard", count: 0 },
-      { name: "Screenings", link: "/dashboard", count: 0 },
-      { name: "Renewals", link: "/dashboard", count: 0 },
-      { name: "Financial Move-Outs", link: "/dashboard", count: 0 },
+      { name: "Applications", link: "/dashboard", count: 4 },
+      { name: "Screenings", link: "/dashboard", count: 77 },
+      { name: "Renewals", link: "/dashboard", count: 99 },
+      { name: "Financial Move-Outs", link: "/dashboard", count: 100 },
     ],
   },
   {

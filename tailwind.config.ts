@@ -6,7 +6,11 @@ export default {
     extend: {
       colors: {
         primary: "#2d7e38",
-        background: "#F5F5F5",
+        background: {
+          100: "#f5f5f5",
+          200: "#ebebeb",
+          300: "#777777",
+        },
         secondary: "#333333",
         tertiary: "#cccccc",
       },
@@ -17,5 +21,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    // ...
+  ],
 } satisfies Config;
+
+// #ebebeb #F5F5F5

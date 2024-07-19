@@ -1,5 +1,5 @@
 .nav-parent {
-  @apply block h-[40px] max-h-[40px] min-h-[40px] w-full bg-primary text-background;
+  @apply text-background-100 block h-[40px] max-h-[40px] min-h-[40px] w-full bg-primary;
 }
 
 .nav-list {
@@ -7,15 +7,15 @@
 }
 
 .menu-item {
-  @apply h-full w-fit min-w-fit max-w-fit border-r-[1px] border-background;
+  @apply border-background-100 h-full w-fit min-w-fit max-w-fit border-r-[1px];
 }
 
 .menu-item.active {
-  @apply bg-background font-semibold text-primary;
+  @apply bg-background-100 font-semibold text-primary;
 }
 
 .menu-item:hover {
-  @apply bg-background text-primary transition-colors duration-200 ease-out;
+  @apply bg-background-100 text-primary transition-colors duration-200 ease-out;
 }
 
 .menu-link {
@@ -27,16 +27,16 @@
 }
 
 .submenu-container {
-  @apply relative w-full min-w-full max-w-full rounded-b-md bg-primary text-xs text-background drop-shadow-lg;
+  @apply text-background-100 relative w-full min-w-full max-w-full rounded-b-md bg-primary text-xs drop-shadow-lg;
   z-index: 1000 !important;
 }
 
 .submenu-item {
-  @apply flex items-center justify-center border-b-[1px] border-background;
+  @apply border-background-100 flex items-center justify-center border-b-[1px];
 }
 
 .submenu-item:hover {
-  @apply bg-background text-primary transition-colors duration-200 ease-out;
+  @apply bg-background-100 text-primary transition-colors duration-200 ease-out;
 }
 
 .submenu-item:last-child {

@@ -9,7 +9,7 @@
 }
 
 .column {
-  @apply rounded-sm bg-background shadow-md;
+  @apply bg-background-100 rounded-sm shadow-md;
 }
 
 .left {
