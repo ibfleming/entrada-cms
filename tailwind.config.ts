@@ -22,8 +22,10 @@ export default {
     },
   },
   plugins: [
-    require("@tailwindcss/forms"),
-    // ...
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-var-requires
+    require("@tailwindcss/forms")({
+      strategy: "class",
+    }),
   ],
 } satisfies Config;
 

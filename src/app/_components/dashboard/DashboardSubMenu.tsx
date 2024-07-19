@@ -12,7 +12,7 @@ export default function DashboardSubMenu({
   console.log(selectedItem);
 
   return (
-    <div className="flex flex-wrap items-center justify-start gap-6 rounded-tr-md border-x-[1px] border-b-[1px] border-tertiary px-5 py-3 text-xs text-secondary">
+    <div className="flex flex-wrap items-center justify-start gap-6 rounded-tr-md border-x-[1px] border-b-[1px] border-t-[1px] border-tertiary px-5 py-3 text-xs text-secondary">
       {selectedItem?.data.map((item, index) => (
         <Link
           key={index}

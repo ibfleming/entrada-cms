@@ -14,16 +14,15 @@ export default function DashboardMenu() {
       <nav className="dashboard-menu">
         <ul className="dashboard-list">
           {dashboardItems.map((item, index) => (
-            <li className="dashboard-item" key={index}>
-              <Link
-                className={`dashboard-link ${item.name === activeItem ? "active" : ""}`}
-                href="/dashboard"
-                onClick={() => setActiveItem(item.name)}
-              >
-                <span id="dash-name">{item.name}</span>
-                <span id="dash-count">{item.count}</span>
-              </Link>
-            </li>
+            <Link
+              key={index}
+              className={`dashboard-link ${item.name === activeItem ? "active" : ""}`}
+              href="/dashboard"
+              onClick={() => setActiveItem(item.name)}
+            >
+              <span id="dash-name">{item.name}</span>
+              <span id="dash-count">{item.count}</span>
+            </Link>
           ))}
         </ul>
       </nav>
