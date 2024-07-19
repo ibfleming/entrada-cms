@@ -19,6 +19,12 @@ export default {
         poppins: "var(--font-poppins)",
         "ibm-plex-sans": "var(--font-ibm-plex-sans)",
       },
+      transitionProperty: {
+        "max-height": "max-height",
+      },
+      maxHeight: {
+        screen: "100vh",
+      },
     },
   },
   plugins: [

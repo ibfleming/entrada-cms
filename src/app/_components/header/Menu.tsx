@@ -4,7 +4,7 @@ import Link from "next/link";
 import menuItems from "~/data/menuItems";
 import { type IconType } from "react-icons";
 import { usePathname } from "next/navigation";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./styles/Menu.css";
 import SubMenu from "./SubMenu";
 
@@ -43,6 +43,18 @@ export default function Menu() {
 
   const activeMenuItem = menuItems.find((item) => isActive(item.link));
   const activeSubMenu = activeMenuItem?.submenu ?? [];
+
+  useEffect(() => {
+    if (showDropdown) {
+      if (dropdownRef.current) {
+        dropdownRef.current.style.maxHeight = `${dropdownRef.current.scrollHeight}px`;
+      }
+    } else {
+      if (dropdownRef.current) {
+        dropdownRef.current.style.maxHeight = "0";
+      }
+    }
+  }, [showDropdown]);
 
   return (
     <>

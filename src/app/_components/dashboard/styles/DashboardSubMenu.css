@@ -1,0 +1,6 @@
+.dash-sub-item {
+}
+
+.dash-sub-item:hover {
+  @apply text-background-300;
+}
