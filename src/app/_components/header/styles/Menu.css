@@ -1,20 +1,17 @@
 .nav-parent {
-  @apply block h-[40px] max-h-[40px] min-h-[40px] w-full bg-primary text-background-100;
+  @apply text-background-100;
 }
 
 .nav-list {
-  @apply flex h-full flex-row items-center justify-start align-middle text-sm font-normal;
+  @apply flex flex-wrap bg-primary text-sm font-normal;
 }
 
 .menu-item {
-  @apply h-full w-fit min-w-fit max-w-fit border-r-[1px] border-background-100;
+  @apply h-[40px] w-fit min-w-fit max-w-fit border-r-[1px] border-background-100;
 }
 
 .menu-item.active {
   @apply bg-background-100 text-primary;
-  .menu-link {
-    @apply font-semibold;
-  }
 }
 
 .menu-item:hover {
@@ -22,7 +19,11 @@
 }
 
 .menu-link {
-  @apply flex h-full w-full flex-row items-center justify-center px-8 align-middle;
+  @apply flex h-full flex-wrap items-center px-8;
+}
+
+.menu-link.active {
+  @apply font-semibold;
 }
 
 .menu-icon {

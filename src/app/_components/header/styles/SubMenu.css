@@ -1,14 +1,14 @@
 .subitem-nav-bar-parent {
-  @apply block h-[40px] max-h-[40px] min-h-[40px] w-full bg-background-100 text-secondary shadow-sm;
+  @apply text-secondary shadow-sm;
 }
 .subitem-list {
-  @apply ml-8 flex h-full flex-row items-center justify-start space-x-8 align-middle text-xs font-normal;
+  @apply flex flex-wrap gap-4 bg-background-100 pl-8 text-xs font-normal;
 }
 
-.subitem-list li:hover {
+.subitem-link:hover {
   @apply text-background-300;
 }
 
 .subitem-link {
-  @apply text-primary;
+  @apply flex h-[40px] items-center;
 }

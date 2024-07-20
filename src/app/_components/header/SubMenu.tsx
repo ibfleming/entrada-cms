@@ -11,9 +11,9 @@ export default function SubMenu({ submenu }: { submenu: SubMenu[] }) {
     <div className="subitem-nav-bar-parent">
       <ul className="subitem-list">
         {submenu.map((item, index) => (
-          <li key={index}>
-            <Link href={item.link}>{item.name}</Link>
-          </li>
+          <Link key={index} href={item.link} className="subitem-link">
+            {item.name}
+          </Link>
         ))}
       </ul>
     </div>

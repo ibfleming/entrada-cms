@@ -66,7 +66,7 @@ export default function Menu() {
               key={index}
             >
               <Link
-                className="menu-link"
+                className={`menu-link ${isActive(item.link) ? "active" : ""}`}
                 href={item.link}
                 onMouseEnter={() => handleMouseEnter(item.name)}
                 onMouseLeave={handleMouseLeave}
