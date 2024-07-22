@@ -23,7 +23,8 @@
 }
 
 .menu-link.active {
-  @apply font-semibold;
+  @apply italic;
+  filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));
 }
 
 .menu-icon {
