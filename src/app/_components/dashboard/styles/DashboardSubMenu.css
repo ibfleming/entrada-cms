@@ -14,6 +14,10 @@
   @apply rounded-md border-[1px] border-secondary bg-background-200;
 }
 
+.dash-sub-item.active:hover {
+  @apply text-secondary;
+}
+
 .dash-sub-icon {
   @apply rounded-md border-[1px] border-secondary bg-tertiary px-1.5 py-[2px] text-[10px] text-secondary drop-shadow-sm;
 }
