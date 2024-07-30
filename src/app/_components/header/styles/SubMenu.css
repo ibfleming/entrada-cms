@@ -12,3 +12,7 @@
 .subitem-link {
   @apply flex h-[40px] items-center;
 }
+
+.subitem-link.active {
+  @apply text-primary;
+}

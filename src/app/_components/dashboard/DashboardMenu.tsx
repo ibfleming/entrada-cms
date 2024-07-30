@@ -7,7 +7,8 @@ import dashboardItems from "~/data/dashItems";
 import { useState } from "react";
 
 export default function DashboardMenu() {
-  const [activeItem, setActiveItem] = useState("Approvals");
+  // Default for debugging for now
+  const [activeItem, setActiveItem] = useState(dashboardItems[2]?.name);
 
   return (
     <>

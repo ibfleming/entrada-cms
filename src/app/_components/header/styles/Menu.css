@@ -12,6 +12,15 @@
 
 .menu-item.active {
   @apply bg-background-100 text-primary;
+  .submenu-container {
+    @apply bg-background-100 text-primary !important;
+  }
+  .submenu-item {
+    @apply border-primary;
+  }
+  .submenu-item:hover {
+    @apply bg-primary text-background-100 transition-colors duration-200 ease-out;
+  }
 }
 
 .menu-item:hover {
@@ -24,7 +33,7 @@
 
 .menu-link.active {
   @apply italic;
-  filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));
+  /*filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));*/
 }
 
 .menu-icon {

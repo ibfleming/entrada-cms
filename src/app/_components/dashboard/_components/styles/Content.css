@@ -1,0 +1,15 @@
+.content {
+  @apply w-full rounded-b-md border-[1px] border-t-0 border-tertiary p-6;
+}
+
+.content-wrapper {
+  @apply rounded-md border-[1px] border-tertiary bg-background-200 p-4 shadow-md;
+}
+
+.content-label {
+  @apply font-ibm-plex-sans text-xl font-[600] text-primary;
+}
+
+.content-info {
+  @apply font-ibm-plex-sans text-sm font-[400] text-secondary;
+}
