@@ -137,6 +137,26 @@ export const verificationTokens = createTable(
 export const phoneTypeEnum = pgEnum("phone_type", ["MOBILE", "PHONE", "HOME"]);
 
 /**
+ * Profile type enum used in the profile table.
+ */
+export const profileTypeEnum = pgEnum("type", [
+  "LEAD",
+  "APPLICANT",
+  "RESIDENT",
+]);
+
+/**
+ * Profile status enum used in the profile table.
+ */
+export const profileStatusEnum = pgEnum("profile_status", [
+  "NEVER_CONTACTED",
+  "CONTACT_NEEDED",
+  "NOT_PROGRESSING",
+  "PROCESS_SCREENING",
+  "GENERATE_LEASES",
+]);
+
+/**
  * Profile table.
  */
 export const profile = createTable("profile", {
@@ -147,6 +167,8 @@ export const profile = createTable("profile", {
   phone: varchar("phone", { length: 255 }).notNull(),
   phoneType: phoneTypeEnum("phone_type").default("MOBILE").notNull(),
   email: varchar("email", { length: 255 }).unique().notNull(),
+  type: profileTypeEnum("type").default("LEAD").notNull(),
+  status: profileStatusEnum("status").default("NEVER_CONTACTED").notNull(),
   createdAt: timestamp("created_at", { withTimezone: true })
     .default(sql`CURRENT_TIMESTAMP`)
     .notNull(),

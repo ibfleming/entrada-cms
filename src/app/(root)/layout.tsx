@@ -1,12 +1,15 @@
+import { HydrateClient } from "~/trpc/server";
 import Header from "../_components/header/Header";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <main>
-      <Header />
-      {children}
-    </main>
+    <HydrateClient>
+      <main>
+        <Header />
+        {children}
+      </main>
+    </HydrateClient>
   );
 }
